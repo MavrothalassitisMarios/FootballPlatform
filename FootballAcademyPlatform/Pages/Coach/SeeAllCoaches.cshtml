@@ -1,0 +1,45 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Coach.SeeAllCoachesModel
+@{
+}
+
+<h2>List of All the Coaches</h2>
+
+@if (Model.CoachesList.Count == 0)
+{
+    <h3>
+        No Coach exist yet.
+
+    </h3>
+}
+
+
+@if (!Model.ErrorMessage!.Equals(""))
+{
+    <h2>@Model.ErrorMessage</h2>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.CoachesList.Count != 0)
+        {
+            @foreach (var coach in Model.CoachesList)
+            {
+                <tr>
+                    <td>@coach.Id</td>
+                    <td>@coach.Username</td>
+                    <td>@coach.Firstname</td>
+                    <td>@coach.Lastname</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary btn-sm" href="/Coach/Login">Return To Login</a>

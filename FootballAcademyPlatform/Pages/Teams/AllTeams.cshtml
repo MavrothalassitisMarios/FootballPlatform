@@ -1,0 +1,46 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Teams.AllTeamsModel
+@{
+}
+
+<h2>List of All the Teams</h2>
+
+@if (Model.TeamsList.Count == 0)
+{
+    <h3>
+        No Team exist yet. You need to create one as Admin
+        
+    </h3>
+}
+<p>To create or update a team click bellow to login as admin</p>
+<a class="btn btn-primary btn-sm" href="/Admin">Admin Login</a>
+
+@if (!Model.ErrorMessage!.Equals(""))
+{
+    <h2>@Model.ErrorMessage</h2>
+}
+<table class="table ">
+    <thead>
+        <tr class="table-dark">
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+    </thead>
+    <tbody class="table-striped table-success">
+        @if (Model.TeamsList.Count != 0)
+        {
+            @foreach (var team in Model.TeamsList)
+            {
+                <tr>
+                    <td>@team.Id</td>
+                    <td>@team.TeamName</td>
+                    <td>@team.Logo</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/Player/SeeTeam?id=@team.Id">See Team</a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

@@ -1,0 +1,70 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Player.SeeTeamModel
+@{
+}
+
+<table class="table table-dark table-sm">
+    <thead>
+        <tr class="">
+            <th>Team Name</th>
+            <th>Logo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Team is not null)
+        {
+                <tr>
+                    <td>@Model.Team.TeamName</td>
+                    <td>@Model.Team.Logo</td>
+                    <td>
+                        <a class="btn btn-success btn-sm" href="/Player/InsertPlayer?id=@Model.Team.Id">Register</a>
+                    </td>
+                </tr>
+        }
+        @if(Model.TeamCoachDto is not null)
+        {
+            <tr>
+                <td>COACH</td>
+                <td>@Model.TeamCoachDto.Firstname</td>
+                <td>@Model.TeamCoachDto.Lastname</td>
+                <td>@Model.TeamCoachDto.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<table class="table mt-4">
+    <thead>
+        <tr class="table-dark">
+            <th>Players</th>
+        </tr>
+        <tr class="table-dark">
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody class="table-striped table-success">
+        @if (Model.TeamPlayers.Count != 0)
+        {
+            @foreach (var player in Model.TeamPlayers)
+            {
+                <tr class="table-striped table-success">
+                    <td>@player.Id</td>
+                    <td>@player.Firstname</td>
+                    <td>@player.Lastname</td>
+                    <td>@player.Email</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/Player/UpdatePlayer?id=@player.Id">Edit Player</a>
+                        <a class="btn btn-primary btn-sm" href="/Player/Info?id=@player.Id">See Details</a>
+                    </td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>
+

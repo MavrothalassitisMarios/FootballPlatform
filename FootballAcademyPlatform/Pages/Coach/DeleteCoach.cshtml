@@ -1,0 +1,41 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Coach.DeleteCoachModel
+@{
+}
+
+@if (!Model.ErrorMessage.Equals(""))
+{
+    <div class="alert alert-primary" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
+
+@if (Model.ErrorMessage.Equals(""))
+{
+    
+    <div class="bg-success">
+
+        <h3>Coach successfully deleted</h3>
+        <form class="px-4 py-3 bg-success">
+            <div class="mb-3">
+                <label for="firstname" class="form-label">Firstname</label>
+                <input type="text" class="form-control" id="firstname" value="@Model.CoachRead!.Firstname">
+            </div>
+            <div class="mb-3">
+                <label for="lastname" class="form-label">Lastname</label>
+                <input type="text" class="form-control" id="lastname" value="@Model.CoachRead.Lastname">
+            </div>
+        </form>
+
+        <div class="dropdown-divider"></div>
+        <div class="row mb-3">
+            <div class="offset-md-1 col-md-3 d-grid">
+                <a role="button" class="btn btn-outline-primary" href="/Coach/Login">Return</a>
+            </div>
+        </div>
+
+    </div>
+}
+
+
+

@@ -1,0 +1,63 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Teams.TeamOfCoachPlayersModel
+@{
+}
+<h3>@Model.Team!.TeamName </h3>
+<table class="table table-sm">
+    <thead>
+        <tr class="table-dark">
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.TeamCoachDto != null)
+        {
+
+            <tr class="table-success">
+                <td>@Model.TeamCoachDto.Id</td>
+                <td>@Model.TeamCoachDto.Firstname</td>
+                <td>@Model.TeamCoachDto.Lastname</td>
+                <td>
+                    <a class="btn btn-dark btn-sm" href="/Coach/UpdateCoach?id=@Model.TeamCoachDto.Id">Update Coach Info</a>
+                    <a class="btn btn-dark btn-sm" href="/Coach/DeleteCoach?id=@Model.TeamCoachDto.Id">Delete Coach</a>
+                </td>
+            </tr>
+            
+        }
+
+    </tbody>
+</table>
+<hr/>
+<table class="table">
+    <thead>
+        <tr class="table-dark">
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.CoachPlayers.Count != 0)
+        {
+            @foreach (var player in Model.CoachPlayers)
+            {
+                <tr class="table-striped table-success">
+                    <td>@player.Id</td>
+                    <td>@player.Firstname</td>
+                    <td>@player.Lastname</td>
+                    <td>@player.Email</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/Coach/PlayerDetailUpdate?id=@player.Id">Edit Player</a>
+                        <a class="btn btn-primary btn-sm" href="/Player/DeletePlayer?id=@player.Id">Delete Player</a>
+                    </td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>

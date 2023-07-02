@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FootballAcademyPlatform
+build_property.RootNamespace = FootballAcademyPlatform
+build_property.ProjectDir = C:\Users\Marios Mav\source\repos\FootballAcademyPlatform\FootballAcademyPlatform\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Marios Mav\source\repos\FootballAcademyPlatform\FootballAcademyPlatform
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Coach/DeleteCoach.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29hY2hcRGVsZXRlQ29hY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Coach/InsertCoach.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29hY2hcSW5zZXJ0Q29hY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Coach/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29hY2hcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Coach/PlayerDetailUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29hY2hcUGxheWVyRGV0YWlsVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Coach/SeeAllCoaches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29hY2hcU2VlQWxsQ29hY2hlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Coach/UpdateCoach.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29hY2hcVXBkYXRlQ29hY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Player/DeletePlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyXERlbGV0ZVBsYXllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Player/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyXEluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Player/InsertPlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyXEluc2VydFBsYXllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Player/SeeTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyXFNlZVRlYW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Player/UpdatePlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyXFVwZGF0ZVBsYXllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Teams/AllTeams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcQWxsVGVhbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Teams/InsertTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcSW5zZXJ0VGVhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Teams/TeamOfCoachPlayers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcVGVhbU9mQ29hY2hQbGF5ZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Teams/UpdateTeam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXNcVXBkYXRlVGVhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Marios Mav/source/repos/FootballAcademyPlatform/FootballAcademyPlatform/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8j79q6vsli

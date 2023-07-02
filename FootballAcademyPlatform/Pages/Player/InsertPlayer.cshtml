@@ -1,0 +1,92 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Player.InsertPlayerModel
+@{
+}
+
+<h4>Create your Player Account</h4>
+
+@if (!Model.ErrorMessage.Equals(""))
+{
+    <div class="alert alert-primary" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
+
+<form method="post" class="px-4 py-3 bg-success">
+    
+    <div class="mb-3">
+        <label for="firstname" class="form-label">Firstname</label>
+        <input type="text" class="form-control" id="firstname" name="firstname" value="@Model.PlayerDto.Firstname">
+    </div>
+    <div class="mb-3">
+        <label for="lastname" class="form-label">Lastname</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" value="@Model.PlayerDto.Lastname">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone number</label>
+        <input type="text" class="form-control" id="phone" name="phone"
+               placeholder="69 + 8 more digits" value="@Model.PlayerDto.Phone">
+    </div>
+    <div class="mb-3">
+        <label for="home-phone" class="form-label">Home-Phone number</label>
+        <input type="text" class="form-control" id="home-phone" name="home-phone"
+               placeholder="10 digits required" value="@Model.PlayerDto.HomePhone">
+    </div>
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" name="address" value="@Model.PlayerDto.Address">
+    </div>
+    <div class="mb-3">
+        <label for="birthday" class="form-label">Birthday</label>
+        <input type="date" class="form-control" id="birthday" name="birthday"
+               required placeholder="ex: 05/29/2006" value="@Model.PlayerDto.DateOfBirth">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email"
+               required placeholder="trial@email.com or .gr" value="@Model.PlayerDto.Email">
+    </div>
+
+    <div class="mb-3">
+        <label for="height" class="form-label">Height</label>
+        <input type="text" class="form-control" id="height" name="height"
+               placeholder="ex. 1.80" value="@Model.PlayerDto.Height" required>
+    </div>
+    <div class="mb-3">
+        <label for="weight" class="form-label">Weight</label>
+        <input type="text" class="form-control" id="weight" name="weight" placeholder="ex. 70.50" 
+                value="@Model.PlayerDto.Weight" required>
+    </div>
+    
+    <div class="mb-3">
+        <label for="position" class="form-label">Position</label>
+        <input type="text" class="form-control" id="position" name="position" value="@Model.PlayerDto.Position">
+    </div>
+    <div class="mb-3">
+        <label for="kAtr" class="form-label">Key Attribute</label>
+        <input type="text" class="form-control" id="kAtr" name="kAtr" 
+                placeholder="good ball technique" value="@Model.PlayerDto.KeyAttribute">
+    </div>
+    <div class="mb-3">
+        <label for="strFoot" class="form-label">Strong Foot</label>
+        <input type="text" class="form-control" id="strFoot" name="strFoot" 
+                placeholder="L = left / R = right" value="@Model.PlayerDto.StrongFoot">
+    </div>
+
+    <div class="mb-3">
+        <label for="teamId" class="form-label">Team Id</label>
+        <input type="text" class="form-control" id="teamId" name="teamId" value="@Model.TeamId" readonly>
+    </div>
+
+
+
+
+    <div class="row mb-3">
+        <div class="offset-md-1 col-md-3 d-grid">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+        <div class="offset-md-1 col-md-3 d-grid">
+            <a role="button" class="btn btn-outline-primary" href="/Player/SeeTeam?id=@Model.TeamId">Cancel</a>
+        </div>
+    </div>
+</form>

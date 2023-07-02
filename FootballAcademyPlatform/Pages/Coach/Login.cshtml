@@ -1,0 +1,33 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Coach.LoginModel
+@{
+}
+
+<h1>Login Form for Coaches</h1>
+
+@if (!Model.ErrorMessage.Equals(""))
+{
+    <div class="alert alert-primary" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
+<div>
+    <a class="btn btn-primary btn-sm" href="/Coach/SeeAllCoaches">All Coaches Registered</a>
+</div>
+<div class="bg-success">
+    <form method="post"   class="px-4 py-3">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary" >Sign in</button>
+    </form>
+
+    <div class="dropdown-divider"></div>
+    <a class=" link-dark link-underline-opacity-25 link-underline-opacity-100-hover" href="/Coach/InsertCoach">For Registration click here!!</a>
+    
+</div>

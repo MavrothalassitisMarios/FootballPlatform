@@ -1,0 +1,46 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Teams.UpdateTeamModel
+@{
+}
+<h4>Update Team</h4>
+
+@if (!Model.ErrorMessage!.Equals(""))
+{
+    <div class="alert alert-primary" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
+
+<form method="post" class="px-4 py-3 bg-primary">
+    <div class="mb-3">
+        <label for="teamId" class="form-label">Choose Team</label>
+        <select name="teamId" id="teamId">
+            @if (Model.TeamsList.Count != 0)
+            {
+                @foreach (var team in Model.TeamsList)
+                {
+                    <option value="@team.Id">@team.TeamName</option>
+                }
+            }
+        </select>
+
+    </div>
+    <div class="mb-3">
+        <label for="teamName" class="form-label">Team Name</label>
+        <input type="text" class="form-control" id="teamName" name="teamName"
+               placeholder="K-(the number of the age of it's players)"  required>
+    </div>
+    <div class="mb-3">
+        <label for="logo" class="form-label">Logo</label>
+        <input type="text" class="form-control" id="logo" name="logo">
+    </div>
+
+    <div class="row mb-3">
+        <div class="offset-md-1 col-md-3 d-grid">
+            <button type="submit" class="btn btn-primary">Update Team</button>
+        </div>
+        <div class="offset-md-1 col-md-3 d-grid">
+            <a role="button" class="btn btn-outline-primary" href="/Teams/AllTeams">Cancel</a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,71 @@
+﻿@page
+@model FootballAcademyPlatform.Pages.Player.InfoModel
+@{
+}
+
+@if (!Model.ErrorMessage.Equals(""))
+{
+    <div>
+        <h2>@Model.ErrorMessage</h2>
+    </div>
+}
+
+<table class="table mt-4">
+    <thead>
+        <tr class="table-dark">
+            <th>@Model.PlayerRead!.Lastname Details</th>
+        </tr>       
+    </thead>
+    <tbody class="table-striped table-success">
+        @if (Model.PlayerRead is not null)
+        {
+            <tr class="table-striped table-success">
+                <td>ID: @Model.PlayerRead.Id</td>
+                
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Firstname: @Model.PlayerRead.Firstname </td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Lastname: @Model.PlayerRead.Lastname</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Phone: @Model.PlayerRead.Phone</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>HomePhone: @Model.PlayerRead.HomePhone</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Address: @Model.PlayerRead.Address</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Birthday: @Model.PlayerRead.DateOfBirth</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Email: @Model.PlayerRead.Email</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Height: @Model.PlayerRead.Height</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Weight: @Model.PlayerRead.Weight</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Position: @Model.PlayerRead.Position</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Key Attribute: @Model.PlayerRead.KeyAttribute</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>Strong Foot: @Model.PlayerRead.StrongFoot</td>
+            </tr>
+            <tr class="table-striped table-success">
+                <td>TeamId: @Model.PlayerRead.TeamId</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a class="btn btn-primary btn-sm" href="/Player/SeeTeam?id=@Model.PlayerRead!.TeamId">Return</a>
+</div>
